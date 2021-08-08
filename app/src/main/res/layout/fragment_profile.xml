@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.profile.ProfileFragment">
+
+        <TextView
+            android:id="@+id/username2"
+            android:layout_width="323dp"
+            android:layout_height="37dp"
+            android:gravity="center"
+            android:text="UserName"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.054" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="536dp"
+            android:layout_marginTop="192dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="40dp">
+
+            <EditText
+                android:id="@+id/name2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:textStyle="bold"
+                android:layout_marginTop="60dp"
+                android:layout_marginRight="25dp"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/age2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="25dp"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/place2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:hint="Enter Your PhoneNumber"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="25dp"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/password2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:hint="Enter Your New Password"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="25dp"
+                android:inputType="textEmailAddress" />
+
+
+            <Button
+                android:id="@+id/update"
+                android:layout_width="356dp"
+                android:layout_height="58dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginRight="25dp"
+                android:text="UPDATE"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/show_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <ProgressBar
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="25dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="Plese Wait..." />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/addphoto"
+            android:layout_width="356dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="56dp"
+            android:text="ADD PHOTO"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AnimationActivity">
+
+<ImageView
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:src="@drawable/hos4"
+    android:layout_centerInParent="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="248dp"
+        android:gravity="center"
+        android:text="Mr.DR"
+        android:textColor="@color/purple_500"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="361dp"
+        android:layout_height="75dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="37dp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="40871-progress-bar-red.json"
+        app:lottie_loop="true" />
+
+
+</RelativeLayout>

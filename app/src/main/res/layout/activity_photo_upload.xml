@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profile.PhotoUploadActivity">
+
+    <Button
+        android:id="@+id/selectbtn"
+        android:layout_width="339dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="308dp"
+        android:layout_marginBottom="50dp"
+        android:text="Select Image"
+        app:layout_constraintBottom_toTopOf="@+id/uploadbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/uploadbtn"
+        android:layout_width="339dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="249dp"
+        android:text="Upload"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectbtn" />
+
+    <ImageView
+        android:id="@+id/profilepic"
+        android:layout_width="259dp"
+        android:layout_height="244dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/selectbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hos4" />
+</androidx.constraintlayout.widget.ConstraintLayout>
